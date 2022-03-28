@@ -1,10 +1,10 @@
 import "styled-components";
 
 interface Size {
-  s: number;
-  m: number;
-  l: number;
-  xl: number;
+  s: number | string;
+  m: number | string;
+  l: number | string;
+  xl: number | string;
 }
 
 declare module "styled-components" {

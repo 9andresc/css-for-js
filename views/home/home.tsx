@@ -12,9 +12,9 @@ function Home() {
       </Head>
 
       <Header>
-        <Heading.h1 mb="m">CSS for JS developers</Heading.h1>
+        <Heading mb="s">CSS for JS developers</Heading>
 
-        <Text.p>Some text blablabla</Text.p>
+        <Text>Some text blablabla</Text>
       </Header>
     </>
   );

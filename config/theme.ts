@@ -10,10 +10,10 @@ const defaultTheme: DefaultTheme = {
     primary: "#FFFC31",
   },
   fontSizes: {
-    s: 12,
-    m: 16,
-    l: 20,
-    xl: 24,
+    s: "0.75rem",
+    m: "1rem",
+    l: "1.25rem",
+    xl: "1.5rem",
   },
   radii: {
     s: 2,
@@ -22,10 +22,10 @@ const defaultTheme: DefaultTheme = {
     xl: 8,
   },
   space: {
-    s: 8,
-    m: 12,
-    l: 16,
-    xl: 20,
+    s: "0.75rem",
+    m: "1rem",
+    l: "1.25rem",
+    xl: "1.5rem",
   },
 };
 
