@@ -4,12 +4,13 @@ const Header = styled.header((props) => ({
   display: "flex",
 
   alignItems: "center",
+  flexDirection: "column",
   justifyContent: "center",
 
-  height: "4rem",
+  minHeight: "4rem",
   width: "100%",
 
-  backgroundColor: props.theme.palette.primary.main,
+  backgroundColor: props.theme.colors.primary,
 }));
 
 export default Header;

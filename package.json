@@ -11,16 +11,21 @@
     "type-check": "tsc --project tsconfig.json --pretty --noEmit"
   },
   "dependencies": {
+    "@capsizecss/core": "3.0.0",
+    "@capsizecss/metrics": "0.2.0",
     "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-is": "17.0.2",
     "ress": "5.0.2",
-    "styled-components": "5.3.5"
+    "styled-components": "5.3.5",
+    "styled-system": "5.1.5"
   },
   "devDependencies": {
     "@types/node": "17.0.22",
     "@types/react": "17.0.42",
     "@types/styled-components": "5.1.24",
+    "@types/styled-system": "5.1.15",
     "@typescript-eslint/parser": "5.16.0",
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0",

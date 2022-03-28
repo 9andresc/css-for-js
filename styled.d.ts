@@ -1,20 +1,24 @@
 import "styled-components";
 
-interface Palette {
-  contrast: string;
-  main: string;
+interface Size {
+  s: number;
+  m: number;
+  l: number;
+  xl: number;
 }
 
 declare module "styled-components" {
   export interface DefaultTheme {
-    borderRadius: string;
-    palette: {
+    colors: {
       common: {
         black: string;
         grey: string;
         white: string;
       };
-      primary: Palette;
+      primary: string;
     };
+    fontSizes: Size;
+    radii: Size;
+    space: Size;
   }
 }
