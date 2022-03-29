@@ -1,3 +1,5 @@
+import { modularScale } from "polished";
+
 import type { DefaultTheme } from "styled-components";
 
 const defaultTheme: DefaultTheme = {
@@ -10,22 +12,22 @@ const defaultTheme: DefaultTheme = {
     primary: "#FFFC31",
   },
   fontSizes: {
-    s: "0.75rem",
-    m: "1rem",
-    l: "1.25rem",
-    xl: "1.5rem",
+    s: modularScale(-1, "1rem", "perfectFourth"),
+    m: modularScale(0, "1rem", "perfectFourth"),
+    l: modularScale(1, "1rem", "perfectFourth"),
+    xl: modularScale(2, "1rem", "perfectFourth"),
   },
   radii: {
-    s: 2,
-    m: 4,
-    l: 6,
-    xl: 8,
+    s: 3,
+    m: 5,
+    l: 7,
+    xl: 9,
   },
   space: {
-    s: "0.75rem",
-    m: "1rem",
-    l: "1.25rem",
-    xl: "1.5rem",
+    s: modularScale(-1, "1rem", "perfectFourth"),
+    m: modularScale(0, "1rem", "perfectFourth"),
+    l: modularScale(1, "1rem", "perfectFourth"),
+    xl: modularScale(2, "1rem", "perfectFourth"),
   },
 };
 
