@@ -9,6 +9,7 @@ interface Size {
 
 declare module "styled-components" {
   export interface DefaultTheme {
+    breakpoints: string[];
     colors: {
       common: {
         black: string;
@@ -18,6 +19,7 @@ declare module "styled-components" {
       primary: string;
     };
     fontSizes: Size;
+    mediaQueries: Size;
     radii: Size;
     space: Size;
   }
