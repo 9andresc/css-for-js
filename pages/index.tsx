@@ -1,1 +1,1 @@
-export { default } from "~/views/home";
+export { Home as default } from "~/views/home";

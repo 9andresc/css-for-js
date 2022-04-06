@@ -2,7 +2,9 @@ import { modularScale } from "polished";
 
 import type { DefaultTheme } from "styled-components";
 
-const defaultTheme: DefaultTheme = {
+const breakpoints = ["600px", "960px", "1280px"];
+export const defaultTheme: DefaultTheme = {
+  breakpoints,
   colors: {
     common: {
       black: "#343434",
@@ -17,6 +19,12 @@ const defaultTheme: DefaultTheme = {
     l: modularScale(1, "1rem", "perfectFourth"),
     xl: modularScale(2, "1rem", "perfectFourth"),
   },
+  mediaQueries: {
+    s: `@media (min-width: ${breakpoints[0]})`,
+    m: `@media (min-width: ${breakpoints[1]})`,
+    l: `@media (min-width: ${breakpoints[2]})`,
+    xl: `@media (min-width: ${breakpoints[2]})`,
+  },
   radii: {
     s: 3,
     m: 5,
@@ -30,5 +38,3 @@ const defaultTheme: DefaultTheme = {
     xl: modularScale(2, "1rem", "perfectFourth"),
   },
 };
-
-export default defaultTheme;

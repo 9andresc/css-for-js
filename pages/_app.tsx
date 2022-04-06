@@ -1,7 +1,7 @@
 import "ress";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 
-import defaultTheme from "~/config/theme";
+import { defaultTheme } from "~/config/theme";
 
 import type { AppProps } from "next/app";
 

@@ -1,23 +1,22 @@
-import Head from "next/head";
+import { Card, CardsContainer } from "~/components/card";
+import { Layout } from "~/components/layout";
 
-import Header from "~/components/header";
-import Heading from "~/components/heading";
-import Text from "~/components/text";
-
-function Home() {
+export function Home() {
   return (
-    <>
-      <Head>
-        <title>Home // CSS for JS developers</title>
-      </Head>
+    <Layout
+      headerDescription="These are my practices from the course"
+      headerTitle="CSS for JS developers"
+      pageTitle="Home // CSS for JS developers"
+    >
+      <CardsContainer>
+        <Card title="Fundamentals Recap">asd</Card>
 
-      <Header>
-        <Heading mb="s">CSS for JS developers</Heading>
+        <Card title="Fundamentals Recap">asd</Card>
 
-        <Text>Some text blablabla</Text>
-      </Header>
-    </>
+        <Card title="Fundamentals Recap">asd</Card>
+
+        <Card title="Fundamentals Recap">asd</Card>
+      </CardsContainer>
+    </Layout>
   );
 }
-
-export default Home;

@@ -1,40 +1,32 @@
 import styled from "styled-components";
-import { color, layout, space } from "styled-system";
+import { color, layout, space, typography } from "styled-system";
 
-import defaultTheme from "~/config/theme";
-
-import type { DefaultTheme } from "styled-components";
-import type { LayoutProps, SpaceProps } from "styled-system";
+import type { ColorProps, LayoutProps, SpaceProps, TypographyProps } from "styled-system";
 
 type Element = "p" | "span";
 
-interface TextProps extends LayoutProps, SpaceProps {
+interface TextProps extends ColorProps, LayoutProps, SpaceProps, TypographyProps {
+  color?: string;
   children?: React.ReactNode;
   element?: Element;
 }
 
-function getFontStyle() {
-  return {
-    fontSize: defaultTheme.fontSizes.m,
-    lineHeight: defaultTheme.fontSizes.m,
-  };
-}
-
 const StyledText = styled.p<TextProps>(
-  ({ theme }) => ({
-    color: theme.colors.common.black,
-    ...getFontStyle(),
+  (props) => ({
+    color: props.theme.colors.common.black,
+    fontSize: props.theme.fontSizes.m,
+    lineHeight: props.theme.fontSizes.m,
   }),
+  color,
   layout,
   space,
+  typography,
 );
 
-function Text({ children, element = "p", ...rest }: TextProps) {
+export function Text({ children, element = "p", ...rest }: TextProps) {
   return (
     <StyledText as={element} {...rest}>
       {children}
     </StyledText>
   );
 }
-
-export default Text;

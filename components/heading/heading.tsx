@@ -1,18 +1,19 @@
 import styled from "styled-components";
-import { color, layout, space } from "styled-system";
+import { color, layout, space, typography } from "styled-system";
 
-import defaultTheme from "~/config/theme";
+import { defaultTheme } from "~/config/theme";
 
-import type { LayoutProps, SpaceProps } from "styled-system";
+import type { ColorProps, LayoutProps, SpaceProps, TypographyProps } from "styled-system";
 
 type Level = "1" | "2" | "3";
 
-interface HeadingProps extends LayoutProps, SpaceProps {
+interface HeadingProps extends ColorProps, LayoutProps, SpaceProps, TypographyProps {
+  color?: string;
   children?: React.ReactNode;
   level?: Level;
 }
 
-function getFontStyle(level: Level) {
+function getFontStyle(level?: Level) {
   let fontSize = defaultTheme.fontSizes.xl;
   if (level === "2") {
     fontSize = defaultTheme.fontSizes.l;
@@ -29,18 +30,18 @@ function getFontStyle(level: Level) {
 const StyledHeading = styled.h1<HeadingProps>(
   ({ level, theme }) => ({
     color: theme.colors.common.black,
-    ...getFontStyle(level!),
+    ...getFontStyle(level),
   }),
+  color,
   layout,
   space,
+  typography,
 );
 
-function Heading({ children, level = "1", ...rest }: HeadingProps) {
+export function Heading({ children, level = "1", ...rest }: HeadingProps) {
   return (
     <StyledHeading as={`h${level}`} level={level} {...rest}>
       {children}
     </StyledHeading>
   );
 }
-
-export default Heading;
