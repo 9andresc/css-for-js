@@ -30,7 +30,7 @@ const Container = styled.li((props) => ({
 export function Card({ children, title }: CardProps): JSX.Element {
   return (
     <Container>
-      <Heading level="2" mb="s">
+      <Heading level="3" mb="s">
         {title}
       </Heading>
       {children}
