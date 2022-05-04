@@ -12,6 +12,7 @@ export const defaultTheme: DefaultTheme = {
       white: "#FCF7F8",
     },
     primary: "#FFFC31",
+    secondary: "#38AECC",
   },
   fontSizes: {
     s: modularScale(-1, "1rem", "perfectFourth"),

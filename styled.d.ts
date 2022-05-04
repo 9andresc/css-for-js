@@ -17,6 +17,7 @@ declare module "styled-components" {
         white: string;
       };
       primary: string;
+      secondary: string;
     };
     fontSizes: Size;
     mediaQueries: Size;
