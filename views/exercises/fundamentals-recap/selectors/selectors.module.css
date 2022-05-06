@@ -1,0 +1,38 @@
+.h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.p {
+  margin-bottom: 24px;
+}
+
+.article .a {
+  color: deeppink;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.article .a:hover {
+  text-decoration: underline;
+}
+
+.aside {
+  background: peachpuff;
+  border: 2px solid;
+  padding: 16px;
+}
+
+.aside .p:last-of-type {
+  margin-bottom: 0;
+}
+
+.aside .a {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.aside .a:hover {
+  text-decoration: none;
+}
