@@ -15,7 +15,6 @@ const StyledText = styled.p<TextProps>(
   (props) => ({
     color: props.theme.colors.common.black,
     fontSize: props.theme.fontSizes.m,
-    lineHeight: props.theme.fontSizes.m,
   }),
   color,
   layout,

@@ -21,10 +21,7 @@ function getFontStyle(level?: Level) {
     fontSize = defaultTheme.fontSizes.m;
   }
 
-  return {
-    fontSize,
-    lineHeight: fontSize,
-  };
+  return { fontSize };
 }
 
 const StyledHeading = styled.h1<HeadingProps>(
