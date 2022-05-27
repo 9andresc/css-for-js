@@ -1,0 +1,49 @@
+.article {
+  margin-bottom: 16px;
+  padding: 32px;
+
+  background-color: #222;
+}
+
+.article:last-of-type {
+  margin-bottom: 0;
+}
+
+.card {
+  margin: auto;
+  padding: 32px;
+  width: 50%;
+
+  background-color: white;
+  border-radius: 8px;
+}
+
+.heading {
+  margin-bottom: 24px;
+  margin-top: -48px;
+  padding: 16px 32px;
+
+  background-color: deeppink;
+  border-radius: 4px;
+
+  font-size: 2rem;
+  text-align: center;
+}
+
+.imageWrapper {
+  margin: 16px -32px;
+  margin-top: 0;
+}
+
+.image {
+  display: block;
+  width: 100%;
+}
+
+.paragraph {
+  margin-bottom: 16px;
+}
+
+.paragraph:last-of-type {
+  margin-bottom: 0;
+}

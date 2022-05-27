@@ -13,6 +13,10 @@ export function Home() {
         <Card title="Fundamentals Recap">
           <Link href="/exercises/fundamentals-recap/selectors" label="Selectors Exercise" />
         </Card>
+
+        <Card title="Rendering Logic I">
+          <Link href="/exercises/rendering-logic-i/margin" label="Margin Exercise" />
+        </Card>
       </CardsContainer>
     </Layout>
   );
