@@ -1,0 +1,50 @@
+.article {
+  padding: 16px 0;
+  width: 100%;
+
+  background-color: #333;
+}
+
+.maxWidthWrapper {
+  margin: 0 auto;
+  max-width: 350px;
+  padding: 0 16px;
+}
+
+.card {
+  padding: 16px;
+
+  background-color: white;
+  border-radius: 5px;
+}
+
+.paragraph {
+  margin-bottom: 0;
+
+  color: #333;
+}
+
+.figure {
+  display: inline-block;
+
+  margin-bottom: 32px;
+  margin-right: 32px;
+  padding: 8px;
+  width: min-content;
+
+  background-color: white;
+  border-radius: 5px;
+}
+
+.figure:last-of-type {
+  margin-right: 0;
+}
+
+.img {
+  margin-bottom: 8px;
+}
+
+.figcaption {
+  color: #666666;
+  text-align: center;
+}

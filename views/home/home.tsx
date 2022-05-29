@@ -17,6 +17,10 @@ export function Home() {
         <Card title="Rendering Logic I">
           <Link href="/exercises/rendering-logic-i/margin" label="Margin Exercise" />
         </Card>
+
+        <Card title="Rendering Logic I">
+          <Link href="/exercises/rendering-logic-i/width-algorithms" label="Width Algorithms Exercise" />
+        </Card>
       </CardsContainer>
     </Layout>
   );

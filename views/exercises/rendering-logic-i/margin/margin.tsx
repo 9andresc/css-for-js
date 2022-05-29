@@ -1,5 +1,4 @@
 import { Layout } from "~/components/layout";
-// import otterImage from "~/public/images/otter.jpg";
 
 import styles from "./margin.module.css";
 
